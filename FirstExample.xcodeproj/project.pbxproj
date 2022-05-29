@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494BE2F12843DD9400582C33 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2F02843DD9400582C33 /* Layoutable.swift */; };
+		494BE2F32843DDA800582C33 /* Layouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2F22843DDA800582C33 /* Layouting.swift */; };
+		494BE2F62843DFA200582C33 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2F52843DFA200582C33 /* SplashView.swift */; };
+		494BE2F82843E30200582C33 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2F72843E30200582C33 /* SplashViewController.swift */; };
 		49D545D728186C6700CCC788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D545D628186C6700CCC788 /* AppDelegate.swift */; };
 		49D545DB28186C6700CCC788 /* FirstTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D545DA28186C6700CCC788 /* FirstTestViewController.swift */; };
 		49D545E028186C6800CCC788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D545DF28186C6800CCC788 /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		29AF82BFD41FF60E0C70C5D9 /* Pods-FirstExample26.04.2022.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstExample26.04.2022.release.xcconfig"; path = "Target Support Files/Pods-FirstExample26.04.2022/Pods-FirstExample26.04.2022.release.xcconfig"; sourceTree = "<group>"; };
+		494BE2F02843DD9400582C33 /* Layoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layoutable.swift; sourceTree = "<group>"; };
+		494BE2F22843DDA800582C33 /* Layouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouting.swift; sourceTree = "<group>"; };
+		494BE2F52843DFA200582C33 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		494BE2F72843E30200582C33 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		49D545D328186C6700CCC788 /* FirstExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D545D628186C6700CCC788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D545DA28186C6700CCC788 /* FirstTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,51 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		494BE2EB2843DBF200582C33 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				49D545E128186C6800CCC788 /* LaunchScreen.storyboard */,
+				49D545E428186C6800CCC788 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		494BE2EC2843DC0000582C33 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				49D545DF28186C6800CCC788 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		494BE2ED2843DC5B00582C33 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				494BE2F42843DF8200582C33 /* Splash */,
+				49D545EA2818834900CCC788 /* SecondTestViewController.swift */,
+				49D545DA28186C6700CCC788 /* FirstTestViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		494BE2EF2843DCD300582C33 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				494BE2F02843DD9400582C33 /* Layoutable.swift */,
+				494BE2F22843DDA800582C33 /* Layouting.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		494BE2F42843DF8200582C33 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				494BE2F52843DFA200582C33 /* SplashView.swift */,
+				494BE2F72843E30200582C33 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		49D545CA28186C6700CCC788 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +123,11 @@
 		49D545D528186C6700CCC788 /* FirstExample */ = {
 			isa = PBXGroup;
 			children = (
+				494BE2EF2843DCD300582C33 /* Protocols */,
 				49D545D628186C6700CCC788 /* AppDelegate.swift */,
-				49D545DA28186C6700CCC788 /* FirstTestViewController.swift */,
-				49D545EA2818834900CCC788 /* SecondTestViewController.swift */,
-				49D545DF28186C6800CCC788 /* Assets.xcassets */,
-				49D545E128186C6800CCC788 /* LaunchScreen.storyboard */,
-				49D545E428186C6800CCC788 /* Info.plist */,
+				494BE2ED2843DC5B00582C33 /* Scenes */,
+				494BE2EC2843DC0000582C33 /* Assets */,
+				494BE2EB2843DBF200582C33 /* Supporting */,
 			);
 			path = FirstExample;
 			sourceTree = "<group>";
@@ -100,6 +152,7 @@
 				49D545D028186C6700CCC788 /* Frameworks */,
 				49D545D128186C6700CCC788 /* Resources */,
 				69C3EE22C41A362A11B735D5 /* [CP] Embed Pods Frameworks */,
+				494BE2F92843EF4D00582C33 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -156,6 +209,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		494BE2F92843EF4D00582C33 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nswiftlint\n";
+		};
 		5894FA6928452B89D5C31F51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,8 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D545DB28186C6700CCC788 /* FirstTestViewController.swift in Sources */,
+				494BE2F12843DD9400582C33 /* Layoutable.swift in Sources */,
 				49D545EB2818834900CCC788 /* SecondTestViewController.swift in Sources */,
+				494BE2F32843DDA800582C33 /* Layouting.swift in Sources */,
 				49D545D728186C6700CCC788 /* AppDelegate.swift in Sources */,
+				494BE2F82843E30200582C33 /* SplashViewController.swift in Sources */,
+				494BE2F62843DFA200582C33 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstExample/Info.plist;
+				INFOPLIST_FILE = FirstExample/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -374,7 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstExample/Info.plist;
+				INFOPLIST_FILE = FirstExample/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

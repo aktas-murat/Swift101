@@ -59,7 +59,6 @@ class ViewController: UIViewController {
 		return view
 	}()
 
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -125,4 +124,3 @@ class ViewController: UIViewController {
 	}
 
 }
-

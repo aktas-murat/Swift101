@@ -38,8 +38,7 @@ class SecondTestViewController: UIViewController {
 		return descriptionLabel
       
 	}()
-	
-	
+
 	lazy var greenView: UIView = {
 		
 		let greenView = UIView()
@@ -49,9 +48,7 @@ class SecondTestViewController: UIViewController {
 		
 	}()
 	
-	
 	lazy var redButton: UIButton = {
-		
 		
 		let redButton = UIButton()
 		redButton.backgroundColor = .red
@@ -59,7 +56,6 @@ class SecondTestViewController: UIViewController {
 		return redButton
 		
 	}()
-	
 	
 	
 	override func viewDidLoad() {
@@ -112,7 +108,6 @@ class SecondTestViewController: UIViewController {
 			make.height.equalTo(45)
 			make.centerX.equalToSuperview()
 		}
-		
 		
 	}
 	
