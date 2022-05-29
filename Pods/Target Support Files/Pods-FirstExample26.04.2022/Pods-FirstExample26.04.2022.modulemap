@@ -1,0 +1,6 @@
+framework module Pods_FirstExample26_04_2022 {
+  umbrella header "Pods-FirstExample26.04.2022-umbrella.h"
+
+  export *
+  module * { export * }
+}
