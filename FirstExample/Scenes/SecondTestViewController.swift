@@ -57,6 +57,14 @@ class SecondTestViewController: UIViewController {
 		
 	}()
 	
+	lazy var listButton: UIButton = {
+		
+		let listButton = UIButton()
+		listButton.setTitle("Song List", for: .normal)
+		listButton.backgroundColor = .blue
+		
+		return listButton
+	}()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -64,6 +72,7 @@ class SecondTestViewController: UIViewController {
 		setupViews()
 		setupLayouts()
 		
+		listButton.addTarget(self, action: #selector(didTaplistButton), for: .touchUpInside)
 		redButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
 	}
 	
@@ -74,6 +83,7 @@ class SecondTestViewController: UIViewController {
 		view.addSubview(descriptionLabel)
 		view.addSubview(greenView)
 		view.addSubview(redButton)
+		view.addSubview(listButton)
 	}
 	
 	func setupLayouts() {
@@ -109,6 +119,13 @@ class SecondTestViewController: UIViewController {
 			make.centerX.equalToSuperview()
 		}
 		
+		listButton.snp.makeConstraints { make in
+			make.top.equalTo(redButton.snp.bottom).offset(20)
+			make.width.equalTo(90)
+			make.height.equalTo(45)
+			make.centerX.equalToSuperview()
+		}
+		
 	}
 	
 	@objc func didTapButton() {
@@ -134,5 +151,10 @@ class SecondTestViewController: UIViewController {
 		}
 		
 	}
+	
+	@objc func didTaplistButton() {
 		
+		self.navigationController?.pushViewController(SongListViewController(), animated: true)
+	}
+	
 }

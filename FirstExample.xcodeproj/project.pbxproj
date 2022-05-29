@@ -11,6 +11,9 @@
 		494BE2F32843DDA800582C33 /* Layouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2F22843DDA800582C33 /* Layouting.swift */; };
 		494BE2F62843DFA200582C33 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2F52843DFA200582C33 /* SplashView.swift */; };
 		494BE2F82843E30200582C33 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2F72843E30200582C33 /* SplashViewController.swift */; };
+		494BE2FC2843F87B00582C33 /* SongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2FB2843F87B00582C33 /* SongListViewController.swift */; };
+		494BE2FE2843F88D00582C33 /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE2FD2843F88D00582C33 /* SongListView.swift */; };
+		49C679C82844090C00C6518F /* SongListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C679C72844090C00C6518F /* SongListTableViewCell.swift */; };
 		49D545D728186C6700CCC788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D545D628186C6700CCC788 /* AppDelegate.swift */; };
 		49D545DB28186C6700CCC788 /* FirstTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D545DA28186C6700CCC788 /* FirstTestViewController.swift */; };
 		49D545E028186C6800CCC788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D545DF28186C6800CCC788 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		494BE2F22843DDA800582C33 /* Layouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouting.swift; sourceTree = "<group>"; };
 		494BE2F52843DFA200582C33 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		494BE2F72843E30200582C33 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		494BE2FB2843F87B00582C33 /* SongListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewController.swift; sourceTree = "<group>"; };
+		494BE2FD2843F88D00582C33 /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
+		49C679C72844090C00C6518F /* SongListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListTableViewCell.swift; sourceTree = "<group>"; };
 		49D545D328186C6700CCC788 /* FirstExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D545D628186C6700CCC788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D545DA28186C6700CCC788 /* FirstTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 		494BE2ED2843DC5B00582C33 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				494BE2FA2843F83900582C33 /* SongList */,
 				494BE2F42843DF8200582C33 /* Splash */,
 				49D545EA2818834900CCC788 /* SecondTestViewController.swift */,
 				49D545DA28186C6700CCC788 /* FirstTestViewController.swift */,
@@ -100,6 +107,16 @@
 				494BE2F72843E30200582C33 /* SplashViewController.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		494BE2FA2843F83900582C33 /* SongList */ = {
+			isa = PBXGroup;
+			children = (
+				494BE2FB2843F87B00582C33 /* SongListViewController.swift */,
+				494BE2FD2843F88D00582C33 /* SongListView.swift */,
+				49C679C72844090C00C6518F /* SongListTableViewCell.swift */,
+			);
+			path = SongList;
 			sourceTree = "<group>";
 		};
 		49D545CA28186C6700CCC788 = {
@@ -274,11 +291,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D545DB28186C6700CCC788 /* FirstTestViewController.swift in Sources */,
+				494BE2FC2843F87B00582C33 /* SongListViewController.swift in Sources */,
 				494BE2F12843DD9400582C33 /* Layoutable.swift in Sources */,
 				49D545EB2818834900CCC788 /* SecondTestViewController.swift in Sources */,
 				494BE2F32843DDA800582C33 /* Layouting.swift in Sources */,
 				49D545D728186C6700CCC788 /* AppDelegate.swift in Sources */,
 				494BE2F82843E30200582C33 /* SplashViewController.swift in Sources */,
+				494BE2FE2843F88D00582C33 /* SongListView.swift in Sources */,
+				49C679C82844090C00C6518F /* SongListTableViewCell.swift in Sources */,
 				494BE2F62843DFA200582C33 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,7 +25,6 @@ final class SplashView: UIView, Layoutable {
 		activityIndicator.color = .white
 		return activityIndicator
 		
-		
 	}()
 	
 	func setupViews() {
@@ -50,4 +49,3 @@ final class SplashView: UIView, Layoutable {
 	}
 		
 }
-
