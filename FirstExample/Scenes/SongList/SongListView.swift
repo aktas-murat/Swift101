@@ -12,13 +12,12 @@ final class SongListView: UIView, Layoutable {
 	lazy var tableView: UITableView = {
 		
 		let tableView = UITableView()
-		tableView.backgroundColor = .lightGray
-		
+		tableView.backgroundColor = .black
 		return tableView
 	}()
 	
 	func setupViews() {
-		
+		backgroundColor = .black
 		addSubview(tableView)
 	}
 	
