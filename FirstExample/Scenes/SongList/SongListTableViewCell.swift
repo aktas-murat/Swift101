@@ -5,13 +5,14 @@
 //  Created by Murat Aktaş on 5/29/22.
 //
 
- import UIKit
+import UIKit
 
 final class SongListTableViewCell: UITableViewCell {
 	
 	lazy var titleLabel: UILabel = {
 		
 		let titleLabel = UILabel()
+		titleLabel.textColor = .white
 		return titleLabel
 	}()
 	
@@ -24,7 +25,9 @@ final class SongListTableViewCell: UITableViewCell {
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
-
+		
+		selectionStyle = .none
+		backgroundColor = .black
 		setupViews()
 		setupLayout()
 	}
